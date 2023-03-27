@@ -1,0 +1,320 @@
+html {
+  background: url("back.jpg") fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+body {
+  font-family: courier, courier new, serif;
+  -ms-content-zooming: none;
+}
+
+header {
+  height: 5%;
+  width: 95%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header .left_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+}
+header .left_header .motor {
+  z-index: 10;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 3%;
+  height: 45%;
+  width: 45px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header .left_header .sites {
+  z-index: 10;
+  font-size: 32px;
+  letter-spacing: 2px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header .left_header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .left_header ul li {
+  margin-left: 10%;
+}
+header .left_header ul li a {
+  margin-right: 98%;
+  color: #fff;
+  text-decoration: none;
+}
+header .left_header ul li a:hover {
+  font-weight: 800;
+  color: #efeadf;
+}
+header .buttons {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+header .buttons .buttonsignin {
+  font-family: courier, courier new, serif;
+  height: 60%;
+  padding: 8px 5px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #FFA500;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .buttons .buttonsignin:hover {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+header .buttons .buttonsignin a {
+  text-decoration: none;
+  color: #fff;
+}
+header .buttons .buttonsignup {
+  font-family: courier, courier new, serif;
+  height: 60%;
+  padding: 8px 5px;
+  margin-left: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: transparent;
+  border: 2px solid #FFA500;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .buttons .buttonsignup:hover {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+header .buttons .buttonsignup a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.placebutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.rentbutton {
+  z-index: 10;
+  margin-right: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: courier, courier new, serif;
+  background-color: transparent;
+  color: #fff;
+  border: 5px solid #ec9900;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px 20px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  font-size: 28px;
+}
+.rentbutton a {
+  text-decoration: none;
+  color: #fff;
+}
+.rentbutton:hover {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.car {
+  display: block;
+  margin-left: -900px;
+  margin-top: -350px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.logos {
+  width: 92%;
+}
+
+.logo {
+  text-align: right;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 600%;
+  letter-spacing: 8px;
+  margin-top: 110px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.logoshadow {
+  margin-right: -15px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.1607843137);
+  font-weight: 800;
+  font-size: 600%;
+  letter-spacing: 8px;
+  margin-top: -199px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media only screen and (max-width: 650px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .left_header .motor {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  header .left_header .sites {
+    margin-left: -8%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  header .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  header .buttons .buttonsignin {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 90%;
+    width: 15%;
+  }
+  header .buttons .buttonsignup {
+    margin-left: 90%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 2%;
+    width: 15%;
+  }
+  .car {
+    margin-top: -180px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  .logos {
+    margin-left: -100px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .logo {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    margin-top: -200px;
+  }
+  .logoshadow {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    margin-top: -205px;
+  }
+}
+@media only screen and (max-width: 1100px) and (min-width: 650px) {
+  header {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  header .motor {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .car {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    margin-top: -250px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .logo {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    margin-top: 20px;
+  }
+  .logoshadow {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+}

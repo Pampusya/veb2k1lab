@@ -1,0 +1,440 @@
+html {
+  background: url("back.jpg") fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: courier, courier new, serif;
+  -ms-content-zooming: none;
+}
+
+header {
+  height: 5%;
+  width: 95%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header .left_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+}
+header .left_header .motor {
+  z-index: 10;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 3%;
+  height: 45%;
+  width: 45px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header .left_header .sites {
+  z-index: 10;
+  font-size: 32px;
+  letter-spacing: 2px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header .left_header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .left_header ul a {
+  margin-left: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+header .left_header ul a:hover {
+  font-weight: 800;
+  color: #efeadf;
+}
+header .buttons {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+header .buttons .buttonsignin {
+  font-family: courier, courier new, serif;
+  height: 60%;
+  padding: 8px 5px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #FFA500;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .buttons .buttonsignin:hover {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+header .buttons .buttonsignin a {
+  text-decoration: none;
+  color: #fff;
+}
+header .buttons .buttonsignup {
+  font-family: courier, courier new, serif;
+  height: 60%;
+  padding: 8px 5px;
+  margin-left: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #FFA500;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .buttons .buttonsignup:hover {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+header .buttons .buttonsignup a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.allpfofile {
+  margin-top: 80px;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.allpfofile .pcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  height: 270px;
+  background-color: rgba(255, 255, 255, 0.205);
+  outline: 2px solid rgba(255, 255, 255, 0.4784313725);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.allpfofile .pcard:hover {
+  height: 345px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.allpfofile .pcard:hover .content .initials {
+  -webkit-transform: translateY(65px);
+          transform: translateY(65px);
+}
+.allpfofile .pcard .content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.allpfofile .pcard .content .initials {
+  text-align: center;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+  font-size: 25px;
+  -webkit-transform: translateY(90px);
+          transform: translateY(90px);
+}
+.allpfofile .pcard .content .initials .buttonedit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+}
+.allpfofile .pcard .content .initials .buttonedit button {
+  font-family: courier, courier new, serif;
+  width: 90px;
+  height: 35px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #FFA500;
+  font-size: 20px;
+  font-weight: 600;
+}
+.allpfofile .pcard .pimg {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  top: -60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #fff;
+  border-radius: 90px;
+  -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.allpfofile .pcard .pimg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.allpfofile .pcard:hover .pimg {
+  border-radius: 25px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 190px;
+  height: 190px;
+  margin-top: -20px;
+}
+.allpfofile .blocks {
+  margin-top: 70px;
+  text-align: center;
+  color: #fff;
+  width: 55%;
+  height: auto;
+}
+.allpfofile .blocks h2 {
+  margin-top: -100px;
+  font-size: 50px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.7764705882);
+}
+.allpfofile .blocks .conteinercars {
+  margin-top: 90px;
+}
+.allpfofile .blocks .conteinercars .carline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.allpfofile .blocks .conteinercars .carline a {
+  text-decoration: none;
+}
+.allpfofile .blocks .conteinercars .carline .alreadycar {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  height: 130px;
+  background-color: rgba(255, 255, 255, 0.4274509804);
+  border: 2px solid rgba(255, 255, 255, 0.5607843137);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.allpfofile .blocks .conteinercars .carline .alreadycar .rentcarimage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50%;
+  font-family: courier, courier new, serif;
+}
+.allpfofile .blocks .conteinercars .carline .alreadycar .rentcarimage img {
+  margin-top: -85px;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+.allpfofile .blocks .conteinercars .carline .alreadycar .textrent {
+  font-size: 22px;
+  margin-top: -20px;
+  text-align: center;
+  color: #ffffff;
+}
+.allpfofile .blocks .conteinercars .carline .alreadycar .textrentprice {
+  font-size: 22px;
+  margin-top: 15px;
+  text-align: end;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 835px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .left_header .sites {
+    margin-left: -5%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .allpfofile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .allpfofile .pcard {
+    margin: auto;
+  }
+  .allpfofile .blocks {
+    width: 100%;
+    margin-top: 140px;
+  }
+  .allpfofile .blocks .conteinercars {
+    margin-top: -10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .allpfofile .blocks .conteinercars .carline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .allpfofile .blocks .conteinercars .carline .alreadycar {
+    margin-top: 80px;
+    width: 370px;
+  }
+  .allpfofile .blocks .conteinercars .carline .alreadycar .rentcarimage img {
+    margin-top: -85px;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  .allpfofile .blocks .conteinercars .carline .alreadycar .textrent {
+    font-size: 22px;
+    margin-top: -20px;
+  }
+  .allpfofile .blocks .conteinercars .carline .alreadycar .textrentprice {
+    font-size: 22px;
+    margin-top: 15px;
+    text-align: end;
+  }
+}
+@media only screen and (max-width: 1135px) and (min-width: 835px) {
+  .allpfofile .blocks .conteinercars {
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .allpfofile .blocks .conteinercars .carline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .allpfofile .blocks .conteinercars .carline .alreadycar {
+    width: 370px;
+    margin-top: 80px;
+  }
+  .allpfofile .blocks .conteinercars .carline .alreadycar .rentcarimage img {
+    margin-top: -85px;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  .allpfofile .blocks .conteinercars .carline .alreadycar .textrent {
+    font-size: 25px;
+    margin-top: -20px;
+  }
+  .allpfofile .blocks .conteinercars .carline .alreadycar .textrentprice {
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: end;
+  }
+}

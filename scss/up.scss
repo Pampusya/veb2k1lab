@@ -1,0 +1,262 @@
+header {
+  height: 5%;
+  width: 95%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header .left_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+}
+header .left_header .motor {
+  z-index: 11;
+  margin-left: 2.5%;
+  margin-top: 35px;
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header .left_header .sites {
+  margin-left: 10%;
+  margin-top: 40px;
+  z-index: 10;
+  font-size: 32px;
+  letter-spacing: 2px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header .left_header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .left_header ul a {
+  margin-left: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+header .left_header ul a:hover {
+  font-weight: 800;
+  color: #efeadf;
+}
+header .buttons {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+header .buttons .buttonsignup {
+  font-family: courier, courier new, serif;
+  height: 60%;
+  padding: 8px 5px;
+  margin-left: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: transparent;
+  border: 2px solid #FFA500;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .buttons .buttonsignup:hover {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+header .buttons .buttonsignup a {
+  text-decoration: none;
+  color: #fff;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background: url("back.jpg") fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: courier, courier new, serif;
+  -ms-content-zooming: none;
+}
+
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.background .shape {
+  position: absolute;
+}
+
+.shape:first-child {
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+  left: -230px;
+  top: -100px;
+}
+
+.shape:last-child {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  right: -270px;
+  bottom: -200px;
+}
+
+form {
+  height: 495px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.4784313725);
+  -webkit-box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+
+form * {
+  font-family: courier, courier new, serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+form h3 {
+  margin-top: -17px;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 7px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
+
+::-webkit-input-placeholder {
+  color: #e5e5e5;
+}
+
+::-moz-placeholder {
+  color: #e5e5e5;
+}
+
+:-ms-input-placeholder {
+  color: #e5e5e5;
+}
+
+::-ms-input-placeholder {
+  color: #e5e5e5;
+}
+
+::placeholder {
+  color: #e5e5e5;
+}
+
+button {
+  margin-top: 50px;
+  width: 100%;
+  padding: 15px 0;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  border: 3px solid #FFA500;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+}
+button:hover {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+@media only screen and (max-width: 616px) {
+  header .buttons .buttonsignup {
+    margin-top: 28px;
+    margin-right: -5px;
+    width: min-content;
+
+  }
+}

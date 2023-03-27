@@ -1,0 +1,446 @@
+html {
+  background: url("back.jpg") fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: courier, courier new, serif;
+  -ms-content-zooming: none;
+}
+
+header {
+  height: 5%;
+  width: 95%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header .left_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+}
+header .left_header .motor {
+  z-index: 10;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 3%;
+  height: 45%;
+  width: 45px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header .left_header .sites {
+  z-index: 10;
+  font-size: 32px;
+  letter-spacing: 2px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header .left_header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .left_header ul li {
+  margin-left: 10%;
+}
+header .left_header ul li a {
+  margin-right: 98%;
+  color: #fff;
+  text-decoration: none;
+}
+header .left_header ul li a:hover {
+  font-weight: 800;
+  color: #efeadf;
+}
+header .buttons {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+header .buttons .buttonsignin {
+  font-family: courier, courier new, serif;
+  height: 60%;
+  padding: 8px 5px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #FFA500;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .buttons .buttonsignin:hover {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+header .buttons .buttonsignin a {
+  text-decoration: none;
+  color: #fff;
+}
+header .buttons .buttonsignup {
+  font-family: courier, courier new, serif;
+  height: 60%;
+  padding: 8px 5px;
+  margin-left: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #FFA500;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .buttons .buttonsignup:hover {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+header .buttons .buttonsignup a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.placebutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.slider {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border: none;
+}
+
+.middle {
+  position: absolute;
+  top: 0%;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+}
+
+.bar {
+  width: 30px;
+  height: 8px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #ffffff;
+  opacity: 0.5;
+  border-radius: 10px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.bar:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+input[name=r] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25%;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.img {
+  height: 100%;
+  width: auto;
+}
+
+.category {
+  width: 160px;
+  position: absolute;
+  z-index: 10;
+  margin-left: 20px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.category label {
+  margin-top: -15px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.category h1 {
+  font-weight: 100;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+  z-index: 1;
+}
+
+#r1:checked ~ .s2 {
+  z-index: 0;
+}
+
+#r1:checked ~ .s2 {
+  z-index: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -25%;
+  z-index: 0;
+}
+
+#r2:checked ~ .s2 {
+  z-index: 1;
+}
+
+#r2:checked ~ .s3 {
+  z-index: 0;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+
+#r3:checked ~ .s2 {
+  z-index: 0;
+}
+
+#r3:checked ~ .s3 {
+  z-index: 1;
+}
+
+#r3:checked ~ .s4 {
+  z-index: 0;
+}
+
+#r4:checked ~ .s1 {
+  margin-left: -75%;
+}
+
+#r4:checked ~ .s3 {
+  z-index: 0;
+}
+
+#r4:checked ~ .s4 {
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.conteinercars {
+  margin-top: 430px;
+}
+.conteinercars .carline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.conteinercars .carline .alreadycar {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 450px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.4274509804);
+  border: 2px solid rgba(255, 255, 255, 0.5607843137);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.conteinercars .carline .alreadycar .rentcarimage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50%;
+  font-family: courier, courier new, serif;
+}
+.conteinercars .carline .alreadycar .rentcarimage img {
+  margin-top: -65px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+.conteinercars .carline .alreadycar .textrent {
+  font-size: 25px;
+  margin-top: -20px;
+  text-align: center;
+  color: #ffffff;
+}
+.conteinercars .carline .alreadycar .textrentprice {
+  font-size: 25px;
+  margin-top: -30px;
+  text-align: end;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 650px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .left_header .motor {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  header .left_header .sites {
+    margin-left: -8%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  header .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  header .buttons .buttonsignin {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 90%;
+    width: 15%;
+  }
+  header .buttons .buttonsignup {
+    margin-left: 90%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 2%;
+    width: 15%;
+  }
+  .category {
+    margin-top: -135px;
+  }
+  .conteinercars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 160px;
+  }
+  .conteinercars .carline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .conteinercars .carline .alreadycar {
+    margin-top: 130px;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 650px) {
+  .conteinercars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 300px;
+  }
+  .conteinercars .carline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .conteinercars .carline .alreadycar {
+    margin-top: 130px;
+  }
+}
